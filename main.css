@@ -1,0 +1,17 @@
+body {
+    background: #999;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, em, b, li {
+    color: #66ff;
+}
+
+span {
+    color:#11fffa;
+}
+
+p {
+    background: #11fffa;
+    padding: 10px;
+}
