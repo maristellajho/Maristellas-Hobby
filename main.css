@@ -1,24 +1,79 @@
 body {
-    background: #999;
-    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
 }
 
-h1, em, b, li {
-    color: #66ff;
+header{
+    text-align: center;
+    font-family: Architects Daughter;
+    background-image: linear-gradient(to bottom right, rgb(250, 175, 187), rgb(252, 193, 252));
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
 }
 
-span {
-    color:#11fffa;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
 }
 
-p {
-    background: #11fffa;
-    padding: 10px;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ff0066;
+  color: black;
 }
 
-.hello {
-    background: white;
-    border-radius: 5px;
-    padding: 10px;
-    width: 50%; 
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #ff6699;
+  color: white;
 }
+
+footer {
+  text-align: center;
+}
+
+@media screen and (min-width: 601px) {
+    header {
+      font-size: 70px;
+    }
+    header img {
+        width: 70px;
+        height: auto;
+        position:relative;
+        top: 10px;
+        left: 10px;
+    }
+    .topnav a{
+      padding: 14px 16px;
+      font-size: 17px;
+    }
+    footer {
+      font-size: small;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    header {
+      font-size: 30px;
+    }
+    header img {
+        width: 30px;
+        height: auto;
+        position:relative;
+        top: 6px;
+        left: 5px;
+    }
+    .topnav a {
+      padding: 9px 11px;
+      font-size: 12px;
+    }
+    footer {
+      font-size: x-small;
+    }
+  }
