@@ -9,7 +9,7 @@ header{
 }
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #ff6699;
   overflow: hidden;
 }
 
@@ -24,13 +24,35 @@ header{
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ff0066;
-  color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #ff6699;
   color: white;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 1;
+  position: fixed; /* Stay in place */
+  top: 1;
+  background-color: rgb(250, 175, 187);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 1%;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a.active {
+  color: #444444;
 }
 
 footer {
@@ -52,6 +74,10 @@ footer {
       padding: 14px 16px;
       font-size: 17px;
     }
+    .sidenav a {
+      padding: 8px 30px;
+
+    }
     footer {
       font-size: small;
     }
@@ -70,8 +96,12 @@ footer {
         left: 5px;
     }
     .topnav a {
-      padding: 9px 11px;
+      padding: 9px 11.1px;
       font-size: 12px;
+    }
+    .sidenav a {
+      padding: 6px 16px;
+      font-size: 80%;
     }
     footer {
       font-size: x-small;
