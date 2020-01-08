@@ -1,0 +1,44 @@
+
+div.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+div.about p {
+    font-family: Sniglet;
+    display: inline-block;
+    background: rgb(255,219,152);
+    border-style: double;
+    color: chocolate;
+    padding: 50px;
+    border-radius: 15px;
+    border-width: 10px;
+}
+  
+@media screen and (min-width: 601px) {
+    div.about p{
+        font-size: xx-large;
+        padding: 60px;
+        border-radius: 30px;
+        border-width: 17px;
+    }
+    div.about p img {
+        float: right;
+        max-height: 100px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.about p{
+        font-size: large;
+        padding: 30px;
+        border-radius: 15px;
+        border-width: 10px;
+    }
+    div.about p img {
+        float: right;
+        max-height: 50px;
+        width: auto;
+    }
+}
